@@ -1,5 +1,3 @@
-// script.js
-
 // Получаем ссылку на контейнер для контента
 const contentContainer = document.getElementById('content');
 
@@ -32,6 +30,38 @@ function loadPage(page) {
             contentContainer.innerHTML = data;
         });
 }
+
+// Слушатель события для кнопки "Добавить в корзину"
+const addToCartButtons = document.querySelectorAll('.add-to-cart');
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', addToCart);
+});
+
+// Функция для добавления товара в корзину
+function addToCart(event) {
+    const product = event.target.closest('.product');
+    const productName = product.querySelector('h3').textContent;
+    const productPrice = parseFloat(product.querySelector('.price').textContent.replace('$', ''));
+
+    const cartItems = document.getElementById('cart-items');
+    const newItem = document.createElement('li');
+    newItem.textContent = `${productName} - $${productPrice.toFixed(2)}`;
+    cartItems.appendChild(newItem);
+
+    updateCartTotal(productPrice);
+}
+
+// Функция для обновления общей стоимости корзины
+function updateCartTotal(price) {
+    const cartTotal = document.getElementById('cart-total');
+    const currentTotal = parseFloat(cartTotal.textContent);
+    cartTotal.textContent = (currentTotal + price).toFixed(2);
+}
+
+// Слушатель события для кнопки "Оформить заказ"
+document.querySelector('.checkout').addEventListener('click', function () {
+    alert('Заказ оформлен!'); // Ваша логика оформления заказа может быть добавлена здесь
+});
 
 // Загрузка главной страницы при старте
 loadPage('index.html');

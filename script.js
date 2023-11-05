@@ -39,9 +39,8 @@ addToCartButtons.forEach(button => {
 
 // Функция для добавления товара в корзину
 function addToCart(event) {
-    const product = event.target.closest('.product');
-    const productName = product.querySelector('h3').textContent;
-    const productPrice = parseFloat(product.querySelector('.price').textContent.replace('$', ''));
+    const productName = event.target.getAttribute('data-name');
+    const productPrice = parseFloat(event.target.getAttribute('data-price'));
 
     const cartItems = document.getElementById('cart-items');
     const newItem = document.createElement('li');
