@@ -1,21 +1,115 @@
-/* Обновленные стили для страницы с подарочными наборами */
+/* Стили для фона страницы */
 body {
+    background-color: #f9f9f9;
     font-family: Arial, sans-serif;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
 }
 
-#content {
+/* Стили для заголовков */
+h1, h2, h3 {
+    font-family: 'Amazon Ember', Arial, sans-serif;
+    font-weight: bold;
+    color: #111;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Стили для текста */
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 15px 0;
+}
+
+/* Стили для ссылок */
+a {
+    color: #0066c0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff9900;
+}
+
+/* Стили для кнопок */
+.button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ff6600;
+}
+
+/* Стили для контейнеров */
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
+/* Стили для разделов страницы */
+.section {
+    padding: 40px 0;
+}
+
+/* Стили для блоков с тенью */
+.shadow-box {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* Дополнительные стили для таблиц */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Стили для товаров и фотографий */
 .product {
     border: 1px solid #ccc;
     padding: 10px;
@@ -26,112 +120,36 @@ body {
     width: 250px;
 }
 
-.product img.product-image {
-    width: 100%;
+.product img {
+    max-width: 100%;
     height: auto;
 }
 
 .product h3 {
-    font-size: 14px;
-    margin: 5px 0;
+    font-size: 18px;
+    margin: 10px 0;
 }
 
 .product p {
-    font-size: 12px;
-    margin: 5px 0;
-}
-
-.price {
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.add-to-cart {
-    background-color: #f0f0f0;
-    color: #333;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 12px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-
-.add-to-cart:hover {
-    background-color: #333;
-    color: #fff;
-}
-
-/* Общие стили для страницы */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    width: 40px;
-    height: 40px;
-}
-
-.logo h1 {
-    font-size: 24px;
-    margin: 0 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Стили для корзины */
-#cart {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 20px 0;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    margin: 0 auto;
-}
-
-.cart-item {
     font-size: 16px;
     margin: 10px 0;
 }
 
-.total {
-    font-size: 20px;
+.price {
+    font-size: 18px;
     font-weight: bold;
-    margin-top: 20px;
 }
 
-.checkout {
-    background-color: #333;
+.add-to-cart {
+    background-color: #ff9900;
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 5px;
 }
 
-.checkout:hover {
-    background-color: #555;
+.add-to-cart:hover {
+    background-color: #ff6600;
 }

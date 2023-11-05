@@ -1,4 +1,4 @@
-/* Общие стили для страницы */
+/* Обновленные стили для страницы с подарочными наборами */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +6,63 @@ body {
     background-color: #f0f0f0;
 }
 
+#content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.product img.product-image {
+    width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.product p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.add-to-cart:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Общие стили для страницы */
 header {
     background-color: #333;
     color: #fff;
@@ -40,59 +97,6 @@ nav ul li {
 nav a {
     text-decoration: none;
     color: #fff;
-}
-
-/* Стили для страницы с подарочными наборами */
-#content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-}
-
-.product {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-}
-
-.product img.product-image {
-    width: 100%; /* Фиксированная ширина изображения */
-    height: auto; /* Автоматическое масштабирование высоты для сохранения пропорций */
-}
-
-.product h3 {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.product p {
-    font-size: 14px;
-    margin: 10px 0;
-}
-
-.price {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.add-to-cart {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-
-.add-to-cart:hover {
-    background-color: #555;
 }
 
 /* Стили для корзины */
