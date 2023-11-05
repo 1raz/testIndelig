@@ -7,27 +7,37 @@ body {
     padding: 0;
 }
 
+/* Стили для полоски сверху */
+.top-bar {
+    background-color: #ff66a1; /* Розовая полоска */
+    height: 5px;
+}
+
 /* Стили для заголовков */
 h1, h2, h3 {
     font-family: 'Amazon Ember', Arial, sans-serif;
     font-weight: bold;
-    color: #111;
+    color: #ff66a1; /* Розовый цвет для заголовков */
+    text-transform: uppercase;
+    margin: 0;
 }
 
 h1 {
     font-size: 36px;
-    margin: 20px 0;
-    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h2 {
     font-size: 24px;
-    margin: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h3 {
     font-size: 18px;
-    margin: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* Стили для текста */
@@ -41,18 +51,18 @@ p {
 
 /* Стили для ссылок */
 a {
-    color: #0066c0;
+    color: #ff66a1; /* Розовый цвет для ссылок */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #ff9900;
+    color: #ff0080; /* Более яркий розовый при наведении */
 }
 
 /* Стили для кнопок */
 .button {
-    background-color: #ff9900;
+    background-color: #ff66a1; /* Розовый цвет для кнопок */
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -62,7 +72,7 @@ a:hover {
 }
 
 .button:hover {
-    background-color: #ff6600;
+    background-color: #ff0080; /* Более яркий розовый при наведении */
 }
 
 /* Стили для контейнеров */
@@ -103,7 +113,7 @@ th, td {
 
 /* Стили для футера */
 footer {
-    background-color: #111;
+    background-color: #ff66a1; /* Розовый фон для футера */
     color: #fff;
     padding: 20px 0;
     text-align: center;
